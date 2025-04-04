@@ -1,8 +1,8 @@
 #!/bin/bash
-docker build -t task37 .
+docker build -t task_final .
 echo Hyyy
-docker login -u surethan37 -p 55665566@S37
-docker tag task37 surethan37/task2
-docker push surethan37/task2
+docker login -u boopeshs -p 02-Apr-05
+docker tag task_final boopeshs/devops_final
+docker push boopeshs/devops_final
 kubectl apply -f  deploy.yaml --validate=false
 kubectl apply -f svc.yaml --validate=false
